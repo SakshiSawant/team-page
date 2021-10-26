@@ -18,8 +18,12 @@ body{
     margin: auto;
 }
 
-.intro__title{
+.intro{
     margin-top: 5em;
+}
+
+.intro__title{
+    /* margin-top: 5em; */
     margin-bottom: 1.5em;
 }
 
@@ -50,6 +54,7 @@ body{
 .img-grid{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2.5em;
 }
 
 .card{
@@ -65,7 +70,7 @@ body{
     font-family: 'PT Serif', serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     line-height: 13px;
     position: absolute;
     writing-mode: vertical-rl;
@@ -83,4 +88,47 @@ body{
 
 .card:nth-child(even){
     margin-top: 6.5em;
+}
+
+@media (min-width: 600px){
+    .container{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .intro{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 8em;
+    }
+
+    .intro__desc{
+        width: 40%;
+    }
+
+    .intro__desc__text{
+        width: 60%;
+    }
+
+    .img-grid{
+        margin-top: 8em;
+    }
+
+    .card{
+        max-width: 32%;
+        margin: 1.8em auto;
+    }
+
+    .card:nth-child(5){
+        margin-top: 12em;
+    }
+
+    .card__title{
+        font-size: 0.8rem;
+    }
+
+    .card__heading{
+        font-size: 1rem;
+    }
+
 }
